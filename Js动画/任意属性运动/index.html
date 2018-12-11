@@ -43,7 +43,7 @@
 			clearInterval(obj.timer);
 			obj.timer = setInterval(function(){
 				if(attr == 'opacity'){
-					var iCur = parseFloat(getStyle(obj,attr))*100;
+					var iCur = Math.round(parseFloat(getStyle(obj,attr))*100);
 				}else{
 					var iCur = parseInt(getStyle(obj,attr));
 				}
