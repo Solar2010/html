@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery实现便民服务</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		#move {
+			width: 300px;
+			margin: 0 auto;
+		}
+		#move a{
+			display: inline-block;
+			width: 58px;
+			height: 25px;
+			border: 1px solid #ddd;
+			border-radius: 3px;
+			background-color: #fff;
+			text-align: center;
+			margin: 10px 17px;
+			position: relative;
+			padding-top: 40px;
+			color: #9c9c9c;
+			font-size: 12px;
+			text-decoration: none;
+			line-height: 25px;
+			overflow: hidden;
+		}
+		#move a i{
+			position:absolute;
+			top: 10px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			filter: alpha(opacity=100);
+			opacity: 1;
+		}
+		#move a:hover {
+			color:#f00;
+		}
+		#move img{
+			width: 60%;
+			border:none;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#move a").mouseenter(function(){
+				$(this).find('i').animate({top:"-25px",opacity:"0"},300,function(){
+					$(this).css({top:"30px"});
+					$(this).animate({top:"10px",opacity:"1"});
+				})
+			})
+		})
+	</script>
+</head>
+<body>
+	<div id="move">
+		<a href="#">
+			<i>
+				<img src="../images/1.png">
+			</i>
+			<p>彩票</p>
+		</a>
+		<a href="#">
+			<i>
+				<img src="../images/2.png">
+			</i>
+			<p>彩票</p>
+		</a>
+		<a href="#">
+			<i>
+				<img src="../images/3.png">
+			</i>
+			<p>彩票</p>
+		</a>
+		<a href="#">
+			<i>
+				<img src="../images/4.png">
+			</i>
+			<p>彩票</p>
+		</a>
+		<a href="#">
+			<i>
+				<img src="../images/1.png">
+			</i>
+			<p>彩票</p>
+		</a>
+		<a href="#">
+			<i>
+				<img src="../images/5.png">
+			</i>
+			<p>彩票</p>
+		</a>
+		<a href="#">
+			<i>
+				<img src="../images/6.png">
+			</i>
+			<p>彩票</p>
+		</a>
+		<a href="#">
+			<i>
+				<img src="../images/7.png">
+			</i>
+			<p>彩票</p>
+		</a>
+		<a href="#">
+			<i>
+				<img src="../images/8.png">
+			</i>
+			<p>彩票</p>
+		</a>
+		<a href="#">
+			<i>
+				<img src="../images/9.png">
+			</i>
+			<p>彩票</p>
+		</a>
+		<a href="#">
+			<i>
+				<img src="../images/10.png">
+			</i>
+			<p>彩票</p>
+		</a>
+		<a href="#">
+			<i>
+				<img src="../images/11.png">
+			</i>
+			<p>彩票</p>
+		</a>
+	</div>
+</body>
+</html>
